@@ -1,0 +1,58 @@
+.pagina-exercicio10 {
+  .inputs-container {
+    flex-direction: row;
+    gap: 45px;
+    justify-content: start;
+    align-items: start;
+    margin: 0px 90px;
+    height: 187px;
+
+    .caixinhas-inputs,
+    .labels {
+      justify-content: center;
+      display: flex;
+      gap: 15px;
+    }
+
+    input {
+      width: 200px;
+    }
+
+    label {
+      margin-right: 150px;
+    }
+
+    p {
+      align-self: start;
+      margin-left: 275px;
+    }
+  }
+
+  .container-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 600;
+  }
+
+  .resultados {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    ul {
+      width: 774px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      background-color: white;
+      gap: 15px;
+      list-style: none;
+    }
+
+    i {
+        cursor: pointer;
+    }
+  }
+}

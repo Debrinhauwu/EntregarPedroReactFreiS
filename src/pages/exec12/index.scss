@@ -1,0 +1,92 @@
+@import "../../cores";
+
+.pagina-exercicio12 {
+  .conteudo {
+    display: flex;
+
+    .inputs-container {
+      margin: 0px;
+      margin-right: 420px;
+      margin-left: 99px;
+      width: 475px;
+
+      .input-caixa {
+        height: 330px;
+      }
+
+      .logica {
+        align-self: flex-start;
+        ul {
+          list-style: none;
+          font-weight: 600;
+          margin-top: 25px;
+          padding: 0;
+        }
+      }
+    }
+
+    .container-res {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .resultados {
+      font-weight: 600;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      max-width: 215px;
+      height: 159px;
+      border-radius: 0px 0px 12px 12px;
+      background-color: white;
+
+      .gen {
+        font-weight: 400;
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .botoes {
+        button {
+          border: 1px solid #2e3870;
+
+          font-size: 14px;
+          font-weight: 600;
+          color: $cor-branca;
+          background-color: $cor-azul;
+          width: 107px;
+          height: 36.11px;
+        }
+
+        .bt1 {
+          border-radius: 0px 0px 0px 12px;
+        }
+        .bt2 {
+          border-radius: 0px 0px 12px 0px;
+        }
+      }
+    }
+
+    .checked-box {
+      display: flex;
+
+      gap: 10px;
+    }
+
+    .linha {
+      background-color: #6533b7;
+      border-radius: 12px;
+      height: 4px;
+      width: 930px;
+    }
+  }
+}

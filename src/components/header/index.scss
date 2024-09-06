@@ -1,0 +1,32 @@
+@import '../../cores';
+
+
+.cabecalho {
+    * {
+        background-color: $cor-azul;
+        color: $cor-branca;
+        font-size: 20px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 75px;
+        max-height: 90px;
+    }
+    
+   
+    .navegacao, .frei {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      
+        h1{
+            font-weight: 500;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+}

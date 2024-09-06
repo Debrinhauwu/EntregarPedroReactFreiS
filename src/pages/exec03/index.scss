@@ -1,0 +1,30 @@
+.pagina-exercicio03 {
+    .inputs-container {
+        margin: 0px 715px;
+    }
+
+    .input-caixa {
+        width: 647px;
+        height: 194px;
+    }
+
+    .caixinhas-inputs{
+        input {
+            margin-top: 10px;
+            width: 120px;
+        }
+
+        label{
+            font-size: 16px; 
+        }
+
+        justify-content: center;
+        
+        display: flex;
+        gap: 65px;
+    }
+
+   
+
+
+}
