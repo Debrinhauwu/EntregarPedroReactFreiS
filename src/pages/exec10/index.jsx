@@ -67,7 +67,7 @@ export default function Exec10() {
     setAltura(listaImc[pos].altura);
     setPeso(listaImc[pos].peso);
     calcularImc();
-    
+
 
     setEditando(pos);
   }
@@ -105,7 +105,7 @@ export default function Exec10() {
 
           <button onClick={calcularImc}>Executar</button>
 
-        
+
         </div>
 
         <div className="container-resultados">

@@ -1,14 +1,14 @@
 @import './cores';
 
-*{
+* {
   font-family: 'Roboto';
   color: $cor-letras;
   margin: 0;
- 
+
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: $cor-branca;
 
 }
@@ -38,22 +38,23 @@ body{
 
   display: flex;
   flex-direction: column;
-  
+
   justify-content: space-evenly;
-  
+
   border-radius: 12px;
-  
-  label{
+
+  label {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
   }
-  
-  input::placeholder, input{
-   font-size: 16px;
-   font-weight: 600;
+
+  input::placeholder,
+  input {
+    font-size: 16px;
+    font-weight: 600;
   }
-  
+
   input {
     border-style: none;
     border: 1px solid #A5A5A5;
@@ -71,7 +72,7 @@ body{
     background-color: $cor-azul;
     padding: 15px 80px;
     border-radius: 12px;
-      align-self: self-end;
+    align-self: self-end;
   }
 
 

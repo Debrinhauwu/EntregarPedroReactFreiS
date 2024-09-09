@@ -124,85 +124,85 @@ export default function Exec12() {
       />
 
       <div className="conteudo">
-      <div className="inputs-container">
-        <div className="input-caixa">
-          <label> Nome</label>
-          <input
-            type="text"
-            placeholder=""
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
-          />
+        <div className="inputs-container">
+          <div className="input-caixa">
+            <label> Nome</label>
+            <input
+              type="text"
+              placeholder=""
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+            />
 
-          <label> Idade</label>
-          <input
-            type="text"
-            placeholder=""
-            value={idade}
-            onChange={(e) => setIdade(e.target.value)}
-          />
+            <label> Idade</label>
+            <input
+              type="text"
+              placeholder=""
+              value={idade}
+              onChange={(e) => setIdade(e.target.value)}
+            />
 
-          <label> Sexo </label>
-          <div className="checked-box">
-            <div>
-              <input
-                name="genero"
-                type="radio"
-                value={"Masculino"}
-                onChange={(e) => setGenero(e.target.value)}
-              />
-              <label> Masculino </label>
-            </div>
+            <label> Sexo </label>
+            <div className="checked-box">
+              <div>
+                <input
+                  name="genero"
+                  type="radio"
+                  value={"Masculino"}
+                  onChange={(e) => setGenero(e.target.value)}
+                />
+                <label> Masculino </label>
+              </div>
 
-            <div>
-              <input
-                name="genero"
-                type="radio"
-                value={"Feminino"}
-                onChange={(e) => setGenero(e.target.value)}
-              />
-              <label> Feminino </label>
-            </div>
-          </div>
-
-          <button onClick={logica}>Executar</button>
-        </div>
-        <div className="logica">
-          <ul>
-            <li>Pessoa mais velha: {pessoaMaisVelha}</li>
-            <li>Mulher mais jovem: {mulherMaisJovem}</li>
-            <li>Média de idade: {mediaDeIdade}</li>
-            <li>Homens com mais de 30: {homensComMaisDe30}</li>
-            <li>Mulheres com menos de 18: {mulheresComMenosDe18}</li>
-          </ul>
-        </div>
-      </div>
-      <div className="pessoas">
-        <h3>Pessoas</h3>
-        <div className="linha">
-          &nbsp;
-        </div>
-        <div className="container-res">
-          {exibirDados.map((item, pos) => (
-            <div className="resultados">
-              <ul>
-                <li>{item.nome}</li>
-                <li>{item.idade} anos</li>
-                <li className="gen">{item.genero}</li>
-              </ul>
-
-              <div className="botoes">
-                <button className="bt1" onClick={() => EditarItem(pos)}>
-                  Editar
-                </button>
-                <button className="bt2" onClick={() => ApagarItem(pos)}>
-                  Apagar
-                </button>
+              <div>
+                <input
+                  name="genero"
+                  type="radio"
+                  value={"Feminino"}
+                  onChange={(e) => setGenero(e.target.value)}
+                />
+                <label> Feminino </label>
               </div>
             </div>
-          ))}
+
+            <button onClick={logica}>Executar</button>
+          </div>
+          <div className="logica">
+            <ul>
+              <li>Pessoa mais velha: {pessoaMaisVelha}</li>
+              <li>Mulher mais jovem: {mulherMaisJovem}</li>
+              <li>Média de idade: {mediaDeIdade}</li>
+              <li>Homens com mais de 30: {homensComMaisDe30}</li>
+              <li>Mulheres com menos de 18: {mulheresComMenosDe18}</li>
+            </ul>
+          </div>
         </div>
-      </div>
+        <div className="pessoas">
+          <h3>Pessoas</h3>
+          <div className="linha">
+            &nbsp;
+          </div>
+          <div className="container-res">
+            {exibirDados.map((item, pos) => (
+              <div className="resultados">
+                <ul>
+                  <li>{item.nome}</li>
+                  <li>{item.idade} anos</li>
+                  <li className="gen">{item.genero}</li>
+                </ul>
+
+                <div className="botoes">
+                  <button className="bt1" onClick={() => EditarItem(pos)}>
+                    Editar
+                  </button>
+                  <button className="bt2" onClick={() => ApagarItem(pos)}>
+                    Apagar
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

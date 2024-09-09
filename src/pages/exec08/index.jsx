@@ -55,7 +55,7 @@ export default function Exec08() {
         </div>
 
         <p style={{ color: corTexto }}>
-        A situação para sua temperatura é {situacao} 
+          A situação para sua temperatura é {situacao}
         </p>
       </div>
     </div>

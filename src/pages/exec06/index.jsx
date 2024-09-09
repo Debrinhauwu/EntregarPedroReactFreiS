@@ -9,41 +9,41 @@ export default function Exec06() {
     const [totalDeDescontos, setTotalDeDesconto] = useState(0);
     const [salarioLiquido, setSalarioLiquido] = useState(0);
 
-    function calculoSalarioLiquido(){
-        let salario = (Number(salarioBase) - Number(totalDeDescontos)) + (parseFloat(salarioBase) * (parseFloat(bonusMensal) / 100 ))
+    function calculoSalarioLiquido() {
+        let salario = (Number(salarioBase) - Number(totalDeDescontos)) + (parseFloat(salarioBase) * (parseFloat(bonusMensal) / 100))
         setSalarioLiquido(salario)
     }
 
 
-    return(
+    return (
         <div className='pagina-exercicio06'>
-            <Cabecalho/>
+            <Cabecalho />
             <TituloEnunciado
-        enunciado="Implemente um programa em javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais"
-        corLinha="#FF5B37"
-        nmExec="Salário líquido"
-        numExec="06"
-      />
+                enunciado="Implemente um programa em javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais"
+                corLinha="#FF5B37"
+                nmExec="Salário líquido"
+                numExec="06"
+            />
 
-                <div className='inputs-container'>
+            <div className='inputs-container'>
 
                 <div className='input-caixa'>
-        <label> Sálario base </label>
-        <input type="text" placeholder='0' onChange={e => setSalarioBase(e.target.value)}/>
-    
-        <label> Bônus mensal em porcentagem </label>
-        <input type="text" placeholder='0'  onChange={e => setBonusMensal(e.target.value)}/>
-    
-        <label> Total de descontos </label>
-        <input type="text" placeholder='0' onChange={e => setTotalDeDesconto(e.target.value)}/>
+                    <label> Sálario base </label>
+                    <input type="text" placeholder='0' onChange={e => setSalarioBase(e.target.value)} />
 
-        <button onClick={calculoSalarioLiquido}>Executar</button>
-    </div>
+                    <label> Bônus mensal em porcentagem </label>
+                    <input type="text" placeholder='0' onChange={e => setBonusMensal(e.target.value)} />
 
-    <p>
-    Seu salário liquído é de R$ {salarioLiquido}
-    </p>
-    </div>
+                    <label> Total de descontos </label>
+                    <input type="text" placeholder='0' onChange={e => setTotalDeDesconto(e.target.value)} />
+
+                    <button onClick={calculoSalarioLiquido}>Executar</button>
+                </div>
+
+                <p>
+                    Seu salário liquído é de R$ {salarioLiquido}
+                </p>
             </div>
+        </div>
     )
 }
